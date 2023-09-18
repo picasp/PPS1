@@ -3,6 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="color_background">#DAC0A3</color>F8F0E5
+    <color name="amikom">#713ABE</color>
     <color name="bg_main">#EADBC8</color>#EADBC8
     <color name="bg">#F8F0E5</color>#DAC0A3
 </resources>
