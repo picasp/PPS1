@@ -35,12 +35,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/white"
+                        android:textSize="16dp"
                         android:text="Nama" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/white"
+                        android:textSize="16dp"
                         android:text="NIM" />
                 </LinearLayout>
 
@@ -54,11 +56,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/white"
+                        android:textSize="16dp"
                         android:text=":" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textSize="16dp"
                         android:textColor="@color/white"
                         android:text=":" />
                 </LinearLayout>
@@ -73,12 +77,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/white"
+                        android:textSize="16dp"
                         android:text="Abdul Rozak M" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/white"
+                        android:textSize="16dp"
                         android:text="21.01.4610" />
                 </LinearLayout>
             </LinearLayout>
@@ -97,6 +103,7 @@
             android:layout_marginEnd="18dp"
             android:layout_marginTop="220dp"
             android:layout_marginStart="18dp"
+            android:textSize="16dp"
             android:text="Program Studi"/>
 
         <EditText
