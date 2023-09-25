@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">P1</string>
+
+    <string-array name="kelas">
+        <item>-- PILIH --</item>
+        <item>Kelas 1</item>
+        <item>Kelas 2</item>
+        <item>Kelas 3</item>
+    </string-array>
 </resources>
