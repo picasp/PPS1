@@ -201,11 +201,13 @@
                 </HorizontalScrollView>
 
                 <Button
+                    android:id="@+id/simpan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Simpan"/>
                 <Button
+                    android:id="@+id/batal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
