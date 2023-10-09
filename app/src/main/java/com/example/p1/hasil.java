@@ -18,6 +18,9 @@ public class hasil extends AppCompatActivity {
         txtnimdata = findViewById(R.id.txtnimdata);
         txtprodidata = findViewById(R.id.txtprodidata);
 
-        Bundle bundle = getIntent()
+        Bundle bundle = getIntent().getExtras();
+        txtnamadata.setText(bundle.getString("keyNama"));
+        txtnimdata.setText(bundle.getString("keyNim"));
+        txtprodidata.setText(bundle.getString("keyProdi"));
     }
 }
