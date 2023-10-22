@@ -77,7 +77,7 @@ public class HomeFragment extends Fragment {
                 String username = loginusername.getText().toString();
                 String password = loginpassword.getText().toString();
 
-                if (username.equals("username") && password.equals("password")) {
+                if (username.equals("admin") && password.equals("admin")) {
                     // Login berhasil, redirect ke aktivitas berikutnya
                     Bundle bundle = new Bundle();
                     bundle.putString("username", username);

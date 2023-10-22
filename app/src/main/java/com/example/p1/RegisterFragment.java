@@ -21,7 +21,7 @@ import android.widget.Toast;
 public class RegisterFragment extends Fragment {
     private EditText regusername;
     private EditText regpassword;
-    private EditText btnreg;
+    private Button btnreg;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -84,9 +84,9 @@ public class RegisterFragment extends Fragment {
                     Bundle bundle = new Bundle();
                     bundle.putString("username", username);
                     bundle.putString("password", password);
-                    Intent i = new Intent(getActivity(), DashboardActivity.class);
-                    i.putExtras(bundle);
-                    startActivity(i);
+                    Intent ii = new Intent(getActivity(), DashboardActivity.class);
+                    ii.putExtras(bundle);
+                    startActivity(ii);
                 }
             }
         });
