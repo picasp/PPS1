@@ -78,19 +78,13 @@ public class HomeFragment extends Fragment {
                 String password = loginpassword.getText().toString();
 
                 if (username.equals("admin") && password.equals("admin")) {
-                    // Login berhasil, redirect ke aktivitas berikutnya
                     Bundle bundle = new Bundle();
                     bundle.putString("username", username);
                     bundle.putString("password", password);
                     Intent i = new Intent(getActivity(), DashboardActivity.class);
                     i.putExtras(bundle);
                     startActivity(i);
-//                        Intent log = new Intent(getActivity(), DashboardActivity.class);
-//                        log.putExtra("keyUsername", loginusername);
-//                        log.putExtra("keyPassword", nim);
-//                        startActivity(log);
                 } else {
-                    // Login gagal, tampilkan pesan kesalahan
                     Toast.makeText(getActivity(), "Informasi Login Tidak Benar", Toast.LENGTH_SHORT).show();
                 }
             }

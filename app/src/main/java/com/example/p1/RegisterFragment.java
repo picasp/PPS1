@@ -74,7 +74,6 @@ public class RegisterFragment extends Fragment {
         btnreg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Logika login di sini
                 String username = regusername.getText().toString();
                 String password = regpassword.getText().toString();
 
