@@ -30,7 +30,7 @@ public class FragActivity extends AppCompatActivity {
         btnFragment2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                loadFragment(new AddFragment());
+                loadFragment(new RegisterFragment());
             }
         });
     }
