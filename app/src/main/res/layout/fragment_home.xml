@@ -6,51 +6,41 @@
     tools:context=".HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_margin="8dp">
+        android:layout_margin="18dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN PAGE"
+            android:textSize="65dp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:textAlignment="center"/>
+
         <EditText
-            android:id="@+id/etHp"
+            android:id="@+id/loginusername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="phone"
-            android:hint="No. Hp"
-            android:textColor="@color/black"/>
+            android:hint="Username"
+            android:inputType="text"/>
+        <EditText
+            android:id="@+id/loginpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_marginBottom="18dp"
+            android:inputType="textPassword"/>
         <Button
-            android:id="@+id/btnDialpad"
+            android:id="@+id/btnlogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dialpad"
-            android:textColor="@color/white"/>
-
-        <Button
-            android:id="@+id/btnKontak"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Kontak"
-            android:textColor="@color/white"/>
-
-        <Button
-            android:id="@+id/btnKamera"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Kamera"
-            android:textColor="@color/white"/>
-
-        <Button
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Galeri"
-            android:textColor="@color/white"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Browser"
-            android:textColor="@color/white"/>
+            android:text="Sign In"/>
     </LinearLayout>
 
 </FrameLayout>

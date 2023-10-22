@@ -7,6 +7,10 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.content.Intent;
+import android.widget.Toast;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,6 +18,9 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class HomeFragment extends Fragment {
+    private EditText loginusername;
+    private EditText loginpassword;
+    private Button btnlogin;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -58,7 +65,37 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
+        loginusername = view.findViewById(R.id.loginusername);
+        loginpassword = view.findViewById(R.id.loginpassword);
+        btnlogin = view.findViewById(R.id.btnlogin);
+
+        btnlogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Logika login di sini
+                String username = loginusername.getText().toString();
+                String password = loginpassword.getText().toString();
+
+                if (username.equals("username") && password.equals("password")) {
+                    // Login berhasil, redirect ke aktivitas berikutnya
+                    Bundle bundle = new Bundle();
+                    bundle.putString("username", username);
+                    bundle.putString("password", password);
+                    Intent i = new Intent(getActivity(), DashboardActivity.class);
+                    i.putExtras(bundle);
+                    startActivity(i);
+//                        Intent log = new Intent(getActivity(), DashboardActivity.class);
+//                        log.putExtra("keyUsername", loginusername);
+//                        log.putExtra("keyPassword", nim);
+//                        startActivity(log);
+                } else {
+                    // Login gagal, tampilkan pesan kesalahan
+                    Toast.makeText(getActivity(), "Informasi Login Tidak Benar", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        return view;
     }
 }
